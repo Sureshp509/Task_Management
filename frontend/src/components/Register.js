@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate,Link } from 'react-router-dom';
 import { register } from '../services/api';
 
 const Register = () => {
@@ -36,6 +36,7 @@ const Register = () => {
                     <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} required />
                 </div>
                 <button type="submit">Register</button>
+                <span>Already Registered? <Link to="/login">Login</Link></span>
             </form>
         </div>
     );
