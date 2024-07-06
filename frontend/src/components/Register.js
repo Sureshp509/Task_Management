@@ -24,15 +24,15 @@ const Register = () => {
             <form onSubmit={handleSubmit}>
             <h2>Register</h2>
                 <div>
-                    <label>Username:</label>
+                    <label>Username:</label><br></br>
                     <input type="text" value={username} onChange={(e) => setUsername(e.target.value)} required />
                 </div>
                 <div>
-                    <label>Email:</label>
+                    <label>Email:</label><br></br>
                     <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} required />
                 </div>
                 <div>
-                    <label>Password:</label>
+                    <label>Password:</label><br></br>
                     <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} required />
                 </div>
                 <button type="submit">Register</button>

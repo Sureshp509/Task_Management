@@ -26,15 +26,15 @@ const TaskForm = () => {
     return (
         <form onSubmit={handleSubmit}>
             <div>
-                <label>Title:</label>
+                <label>Title:</label><br></br>
                 <input type="text" value={title} onChange={(e) => setTitle(e.target.value)} required />
             </div>
             <div>
-                <label>Description:</label>
+                <label>Description:</label><br></br>
                 <textarea value={description} onChange={(e) => setDescription(e.target.value)} required></textarea>
             </div>
             <div>
-                <label>Due Date:</label>
+                <label>Due Date:</label><br></br>
                 <input type="date" value={dueDate} onChange={(e) => setDueDate(e.target.value)} required />
             </div>
             <div>
@@ -46,7 +46,7 @@ const TaskForm = () => {
                 </select>
             </div>
             <div>
-                <label>Category:</label>
+                <label>Category:</label><br></br>
                 <input type="text" value={category} onChange={(e) => setCategory(e.target.value)} />
             </div>
             <button type="submit">Create Task</button>
