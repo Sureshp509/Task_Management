@@ -24,16 +24,17 @@ const TaskList = () => {
 
     return (
         <div>
-            <h2>Tasks</h2>
+            <center><h2>Tasks</h2></center>
             <TaskForm />
             <div>
-                <label>Filter by status:</label>
+               <center><label>Filter by status:</label>
                 <select onChange={(e) => setFilter(e.target.value)} value={filter}>
                     <option value="all">All</option>
                     <option value="pending">Pending</option>
                     <option value="in-progress">In Progress</option>
                     <option value="completed">Completed</option>
                 </select>
+                </center> 
             </div>
             <ul>
                 {filteredTasks.map(task => (
